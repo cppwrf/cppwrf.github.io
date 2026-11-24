@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Install CPPWRF, run the self-test, and start a real-data forecast with WPS inputs.">
+  <title>Docs | CPPWRF</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html"><picture><source srcset="assets/mark-dark.png" media="(prefers-color-scheme: dark)"><img class="brand-mark" src="assets/mark.png" alt="" width="44" height="44"></picture><span class="brand-word">CPPWRF</span></a>
+    <nav aria-label="Main">
+      <ul class="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="verification.html">Verification</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="docs.html" aria-current="page">Docs</a></li>
+        <li><a href="demo.html">Demo</a></li>
+        <li><a href="cite.html">Cite</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <header class="shell page-head">
+    <h1>Documentation</h1>
+    <p class="measure">Install CPPWRF, run the self-test, then use the WRF preprocessing workflow for a real-data case.</p>
+    <nav aria-label="On this page">
+      <ul class="jump-links">
+        <li><a href="#install">Install</a></li>
+        <li><a href="#forecast">First forecast</a></li>
+        <li><a href="#guides">Guides</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="shell content">
+    <section class="section" id="install">
+      <h2 class="section-title">Install CPPWRF</h2>
+      <div class="split">
+        <div>
+          <p>Build from source, use a release tarball for your build flavour, or use a container. The source build needs a C++20 compiler, CMake 3.24 or later, OpenMP and NetCDF-C headers. The tools use Python 3 with NumPy and netCDF4.</p>
+          <p>For CUDA builds, the minimum is CUDA Toolkit 12.1 and an NVIDIA GPU with compute capability 7.0. Check the install guide for toolkit requirements on your GPU and host compiler.</p>
+          <p><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/INSTALL.md">Full installation guide</a> · <a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.4.0">Release tarballs</a></p>
+        </div>
+        <div>
+          <h3>Build and test CPU FP64</h3>
+          <p class="small">From the v1.4.0 source tree with the prerequisites installed.</p>
+          <pre><code>cmake -S . -B build-cpu \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCPPWRF_ENABLE_CUDA=OFF \
+  -DCPPWRF_DOUBLE=ON
+cmake --build build-cpu -j "$(nproc)"
+cmake --install build-cpu --prefix "$HOME/cppwrf"
+export PATH="$HOME/cppwrf/bin:$PATH"
+"$HOME/cppwrf/share/cppwrf/examples/selftest/run.sh" cpu-fp64</code></pre>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="forecast">
+      <h2 class="section-title">First real-data forecast</h2>
+      <div class="panel">
+        <ol class="step-list">
+          <li>Run WPS on GFS inputs to produce the <code>met_em</code> files.</li>
+          <li>Place the <code>met_em</code> files and <code>namelist.input</code> in a run directory. Match <code>num_metgrid_levels</code> and <code>num_land_cat</code> to the inputs, then run <code>cppwrf-realexe</code> to write <code>wrfinput</code> and <code>wrfbdy</code>.</li>
+          <li>Link the runtime tables from WRF v4.8.0’s <code>run/</code> directory. Check the options with <code>cppwrf-check namelist.input</code> and run <code>cppwrf-wrf --mode cpu-fp64</code> to write <code>wrfout</code>.</li>
+          <li>Run the quick-start <code>plot.py</code> example to make a map from the output.</li>
+        </ol>
+        <p><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/QUICKSTART.md">Full quick start</a></p>
+      </div>
+    </section>
+    <section class="section" id="guides">
+      <h2 class="section-title">Guides on GitHub</h2>
+      <div class="panel">
+        <ul class="link-list">
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/USER_GUIDE.md">User guide and namelist options</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/MIGRATING_FROM_WRF.md">Migrating from WRF</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/FAQ.md">Frequently asked questions</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/REAL.md">Real-data initialization</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/NESTING.md">Nesting</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/MPI.md">MPI and domain decomposition</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/PHYSICS_SUITE.md">Physics suite</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/STATUS.md">Implementation and verification status</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/FP32_IDENTITY.md">FP32 identity</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/FP32_ACCURACY.md">Fast FP32 accuracy</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/PYTHON.md">Python interface</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/TOOLS.md">Command-line tools</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/POST.md">Post-processing</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/VERIFY_OBS.md">Verification against observations</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/RELEASE_NOTES.md">Release notes</a></li>
+          <li><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/LICENSING.md">Licensing</a></li>
+        </ul>
+        <p><a href="https://github.com/Xassemblianist/CPPWRF/tree/v1.4.0/docs">Browse all v1.4.0 documentation files</a></p>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>CPPWRF · Ömer Kaan Yılmaz</p>
+    <nav aria-label="Project links">
+      <ul class="footer-nav">
+        <li><a href="https://github.com/Xassemblianist/CPPWRF">GitHub</a></li>
+        <li><a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.4.0">v1.4.0</a></li>
+        <li><a href="cite.html#license">License and citation</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script src="assets/header.js" defer></script>
+</body>
+</html>

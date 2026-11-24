@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CPPWRF is a C++20/CUDA port of WRF-ARW v4.8.0 for OpenMP CPUs and NVIDIA GPUs.">
+  <title>CPPWRF | A C++20/CUDA port of WRF-ARW</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html"><picture><source srcset="assets/mark-dark.png" media="(prefers-color-scheme: dark)"><img class="brand-mark" src="assets/mark.png" alt="" width="44" height="44"></picture><span class="brand-word">CPPWRF</span></a>
+    <nav aria-label="Main">
+      <ul class="site-nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="verification.html">Verification</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="demo.html">Demo</a></li>
+        <li><a href="cite.html">Cite</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <section class="hero" aria-labelledby="project">
+    <div class="shell hero-layout">
+      <div>
+        <p class="eyebrow">WRF-ARW v4.8.0 · CPPWRF v1.4.0</p>
+        <h1 id="project">CPPWRF</h1>
+        <p class="tagline">A C++20/CUDA port of the WRF-ARW weather model for OpenMP CPUs and NVIDIA GPUs.</p>
+        <ul class="actions">
+          <li><a class="button" href="https://github.com/Xassemblianist/CPPWRF">View on GitHub</a></li>
+          <li><a class="button secondary" href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.4.0">Latest release v1.4.0</a></li>
+        </ul>
+      </div>
+      <section class="bench-panel" aria-labelledby="bench-head">
+        <h2 id="bench-head">Steady stepping on Colab G4</h2>
+        <p class="bench-note">Case C2, large daytime P4 grid (359 × 269 × 44), history off.</p>
+        <dl class="bench-metrics">
+          <div><dt>CUDA FP32 fast vs stock WRF real*4</dt><dd>10.32×</dd></div>
+          <div><dt>CUDA FP32 fast vs tuned WRF real*4</dt><dd>9.22×</dd></div>
+          <div><dt>CUDA FP32 identity vs stock WRF real*4</dt><dd>10.08×</dd></div>
+          <div><dt>CUDA FP64 vs stock WRF real*8</dt><dd>5.48×</dd></div>
+        </dl>
+        <p class="bench-note">Median per-block speed-ups on one NVIDIA RTX PRO 6000 Blackwell Server Edition versus the fastest screened WRF layouts on the same runtime’s AMD EPYC 9B45 (24 cores, 48 hardware threads). CPPWRF model code v1.2.1 (<code>fa797b3</code>).</p>
+        <p class="bench-note"><a href="performance.html">Paper benchmarks and protocol</a></p>
+      </section>
+    </div>
+  </section>
+  <div class="shell content home-content">
+    <section class="section split" aria-labelledby="identity">
+      <div>
+        <h2 id="identity">Bit identity with WRF</h2>
+        <p>In v1.4.0, CPU CI passed 531 checks against WRF at tolerance 0, CUDA FP64 passed 423 checks against WRF real*8 at tolerance 0, and CUDA FP32 identity passed 44 checks against WRF real*4 at tolerance 0.</p>
+        <p><a href="verification.html">Verification method and coverage</a></p>
+      </div>
+      <div class="panel">
+        <h3>WRF inputs and outputs</h3>
+        <p>CPPWRF ports the dynamical core, physics, static nesting, <code>real.exe</code> and <code>ideal.exe</code>. It reads WRF’s <code>wrfinput</code> and <code>wrfbdy</code> and writes <code>wrfout</code> and <code>wrfrst</code>.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="resources">
+      <h2 class="section-title" id="resources">Project resources</h2>
+      <div class="grid">
+        <article class="resource"><h3><a href="docs.html">Documentation</a></h3><p>Build, install and run a forecast from WPS inputs.</p></article>
+        <article class="resource"><h3><a href="performance.html#paper">Paper / preprint</a></h3><p>In preparation.</p></article>
+        <article class="resource"><h3><a href="demo.html">Browser demo</a></h3><p>Run idealized WRF cases in WebAssembly.</p></article>
+        <article class="resource"><h3><a href="https://doi.org/10.5281/zenodo.24442751">Zenodo archive</a></h3><p>DOI <code>10.5281/zenodo.24442751</code> · all versions.</p></article>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>CPPWRF · Ömer Kaan Yılmaz</p>
+    <nav aria-label="Project links">
+      <ul class="footer-nav">
+        <li><a href="https://github.com/Xassemblianist/CPPWRF">GitHub</a></li>
+        <li><a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.4.0">v1.4.0</a></li>
+        <li><a href="cite.html#license">License and citation</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script src="assets/header.js" defer></script>
+</body>
+</html>

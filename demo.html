@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Run idealized CPPWRF cases in WebAssembly or explore the separate forecast site.">
+  <title>Demo | CPPWRF</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html"><picture><source srcset="assets/mark-dark.png" media="(prefers-color-scheme: dark)"><img class="brand-mark" src="assets/mark.png" alt="" width="44" height="44"></picture><span class="brand-word">CPPWRF</span></a>
+    <nav aria-label="Main">
+      <ul class="site-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="verification.html">Verification</a></li>
+        <li><a href="performance.html">Performance</a></li>
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="demo.html" aria-current="page">Demo</a></li>
+        <li><a href="cite.html">Cite</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <header class="shell page-head">
+    <h1>Browser demo</h1>
+    <p class="measure">CPPWRF-Web provides a WebAssembly model demo and a separate forecast interface.</p>
+  </header>
+  <div class="shell content">
+    <section class="section split" aria-label="CPPWRF-Web pages">
+      <article class="panel">
+        <h2>Run an idealized case</h2>
+        <p>CPPWRF runs in double precision in WebAssembly. Choose the 2D squall line (<code>em_squall2d_x</code>) or the 3D supercell (<code>em_quarter_ss</code>) and watch vertical sections of potential-temperature perturbation, vertical velocity and rainwater.</p>
+        <p>At the end, the demo checks hashes for every <code>wrfout</code> variable and output time against native CPU FP64 CPPWRF. The project reports matching hashes and byte-identical files for both cases. This build uses CPPWRF v1.0.0.</p>
+        <ul class="actions"><li><a class="button" href="https://xassemblianist.github.io/CPPWRF-WEB/web1.html">Open WebAssembly demo</a></li></ul>
+      </article>
+      <article class="panel">
+        <h2>Explore the forecast site</h2>
+        <p>The Turkish-language forecast interface displays forecasts on a WebGL2 map with a meteogram and Skew-T. It can run real-data CPPWRF forecasts through a local server, and the public page shows sample forecasts when that server is unavailable.</p>
+        <ul class="actions"><li><a class="button secondary" href="https://xassemblianist.github.io/CPPWRF-WEB/">Open forecast site</a></li></ul>
+      </article>
+    </section>
+    <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF-WEB/blob/main/README.md">CPPWRF-Web README</a></p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>CPPWRF · Ömer Kaan Yılmaz</p>
+    <nav aria-label="Project links">
+      <ul class="footer-nav">
+        <li><a href="https://github.com/Xassemblianist/CPPWRF">GitHub</a></li>
+        <li><a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.4.0">v1.4.0</a></li>
+        <li><a href="cite.html#license">License and citation</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script src="assets/header.js" defer></script>
+</body>
+</html>
