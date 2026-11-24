@@ -40,11 +40,11 @@
   </header>
   <div class="shell content">
     <section class="section" id="results">
-      <h2 class="section-title">v1.4.0 results at tolerance 0</h2>
+      <h2 class="section-title">v1.5.0 results at tolerance 0</h2>
       <div class="grid three">
         <article class="method-card">
-          <h3>CPU CI · 531 checks</h3>
-          <p>469 FP64 cases, 18 restart checks and 44 FP32 cases against WRF.</p>
+          <h3>CPU CI · 533 checks</h3>
+          <p>471 FP64 cases, 18 restart checks and 44 FP32 cases against WRF.</p>
         </article>
         <article class="method-card">
           <h3>CUDA FP64 · 423 checks</h3>
@@ -55,7 +55,7 @@
           <p>44 cases against WRF real*4 on Colab G4. Identity is the default CUDA FP32 mode.</p>
         </article>
       </div>
-      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/RELEASE_NOTES.md#verification">Release verification results</a></p>
+      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/RELEASE_NOTES.md#verification">Release verification results</a></p>
     </section>
 
     <section class="section" id="method">
@@ -92,7 +92,7 @@
           <p>The suite exercises real-data and idealized cases, including a three-domain two-way nest in CPU and CUDA FP64. FP32 identity covers 24 configurations. Tiled and MPI checks apply to the configurations run in those layouts.</p>
         </div>
       </div>
-      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/STATUS.md">Full coverage matrix</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/FP32_IDENTITY.md">FP32 identity cases</a></p>
+      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/STATUS.md">Full coverage matrix</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/FP32_IDENTITY.md">FP32 identity cases</a></p>
     </section>
 
     <section class="section" id="limits">
@@ -102,12 +102,12 @@
           <li>Bit identity applies to verified configurations and the specified WRF reference toolchain. FP32 identity coverage excludes restarts, vertical refinement and runs with more than two domains.</li>
           <li>Moving nests, <code>ndown.exe</code>, multilayer urban models and the lake model are unported. CPPWRF rejects unported namelist options. Some ported schemes and options are restricted to a single domain.</li>
           <li>Native restart files have limits with nests, adaptive time stepping and <code>tmn_update</code>. For those configurations, use WRF-format <code>wrfrst</code> files.</li>
-          <li>MPI tests ran on one node. v1.4.0 includes a CUDA FP64 verification run on two T4 GPUs. Runs across nodes or on more than two GPUs remain unverified.</li>
+          <li>MPI runs give WRF’s bits in every tested layout on one machine: up to 48 CPU ranks, and CUDA FP64 on two T4 GPUs in nine layouts. Runs across several nodes use the same code and have not been tested yet.</li>
           <li>The paper documents verification with GCC on x86-64 Linux. The opt-in HIP build path still needs runtime verification on AMD GPUs.</li>
           <li>The 72-hour WRF comparison for the two-way nest N3 remains open.</li>
         </ul>
       </div>
-      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/STATUS.md#not-yet-implemented">Configuration and restart limits</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.4.0/docs/MPI.md">MPI verification</a></p>
+      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/STATUS.md#not-yet-implemented">Configuration and restart limits</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/MPI.md">MPI verification</a></p>
     </section>
   </div>
 </main>
@@ -117,7 +117,7 @@
     <nav aria-label="Project links">
       <ul class="footer-nav">
         <li><a href="https://github.com/Xassemblianist/CPPWRF">GitHub</a></li>
-        <li><a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.4.0">v1.4.0</a></li>
+        <li><a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.5.0">v1.5.0</a></li>
         <li><a href="cite.html#license">License and citation</a></li>
       </ul>
     </nav>
