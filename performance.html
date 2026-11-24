@@ -28,7 +28,7 @@
 <main id="main" tabindex="-1">
   <header class="shell page-head">
     <h1>Performance</h1>
-    <p class="measure">Paper benchmark on one Google Colab G4 runtime using CPPWRF v1.2.1 model code (<code>fa797b3</code>) and WRF v4.8.0.</p>
+    <p class="measure">The paper benchmark ran on one Google Colab G4 runtime on 23–24 November 2026, using the model code of CPPWRF release 1.4.0 (<code>a63ed9f</code>) and WRF v4.8.0.</p>
     <nav aria-label="On this page">
       <ul class="jump-links">
         <li><a href="#protocol">Protocol</a></li>
@@ -122,48 +122,48 @@
           <tbody role="rowgroup">
             <tr role="row">
               <th role="rowheader" scope="row">C1</th>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>2.79</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>2.45</span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>2.82</span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>2.49</span></td>
               <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>4.37</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>0.46 <span class="ratio">(6.07×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>0.54 <span class="ratio">(5.14×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1.56 <span class="ratio">(2.80×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>5.50 <span class="ratio">(0.79×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>0.46 <span class="ratio">(6.16×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>0.53 <span class="ratio">(5.34×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1.53 <span class="ratio">(2.86×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>5.57 <span class="ratio">(0.79×)</span></span></td>
             </tr>
             <tr role="row">
               <th role="rowheader" scope="row">C2</th>
               <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>28.7</span></td>
               <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>25.6</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>50.5</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>2.79 <span class="ratio">(10.32×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>2.84 <span class="ratio">(10.08×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>9.22 <span class="ratio">(5.48×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>49.9 <span class="ratio">(1.01×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>50.7</span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>2.72 <span class="ratio">(10.54×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>2.78 <span class="ratio">(10.32×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>9.16 <span class="ratio">(5.53×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>49.7 <span class="ratio">(1.02×)</span></span></td>
             </tr>
             <tr role="row">
               <th role="rowheader" scope="row">C3</th>
               <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>11.8</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>9.08</span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>9.04</span></td>
               <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>14.5</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>1.62 <span class="ratio">(7.30×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>1.72 <span class="ratio">(6.87×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>5.06 <span class="ratio">(2.87×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>12.9 <span class="ratio">(1.12×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>1.58 <span class="ratio">(7.47×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>1.67 <span class="ratio">(7.07×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>4.93 <span class="ratio">(2.94×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>12.2 <span class="ratio">(1.19×)</span></span></td>
             </tr>
             <tr role="row">
               <th role="rowheader" scope="row">C4</th>
               <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>30.1</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>24.1</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>42.3</span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>3.32 <span class="ratio">(9.06×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>3.81 <span class="ratio">(7.87×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>9.70 <span class="ratio">(4.36×)</span></span></td>
-              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>36.3 <span class="ratio">(1.17×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>24.2</span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>39.9</span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>3.13 <span class="ratio">(9.66×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>3.58 <span class="ratio">(8.42×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>9.43 <span class="ratio">(4.23×)</span></span></td>
+              <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>35.9 <span class="ratio">(1.11×)</span></span></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="fit-note">The coefficient of variation of steady times across timed blocks was at most 0.71%.</p>
+      <p class="fit-note">The coefficient of variation of steady times across timed blocks was at most 0.80%.</p>
       <details class="disclosure">
         <summary>Process layouts and normalized rates</summary>
         <div class="disclosure-body">
@@ -186,18 +186,18 @@
                 <tr role="row">
                   <th role="rowheader" scope="row">C1</th>
                   <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>sm12x4</span></td>
-                  <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>sm6x4</span></td>
+                  <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>sm12x4</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>sm6x4</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1 GPU</span></td>
-                  <td role="cell"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>omp24</span></td>
+                  <td role="cell"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>omp48</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2</th>
                   <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>sm12x4</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>sm12x4</span></td>
-                  <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>sm6x4</span></td>
+                  <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>sm12x2</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1 GPU</span></td>
@@ -211,13 +211,13 @@
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1 GPU</span></td>
-                  <td role="cell"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>omp24</span></td>
+                  <td role="cell"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>omp48</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4</th>
                   <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>sm12x4</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>sm12x4</span></td>
-                  <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>sm8x3</span></td>
+                  <td role="cell"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>sm12x4</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>1 GPU</span></td>
                   <td role="cell"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1 GPU</span></td>
@@ -245,43 +245,43 @@
               <tbody role="rowgroup">
                 <tr role="row">
                   <th role="rowheader" scope="row">C1</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>99.9</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>87.8</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>101</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>89.1</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>156</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>16.5</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>19.4</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>55.7</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>197</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>16.4</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>18.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>54.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>199</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>113</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>101</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>198</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>10.9</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>11.2</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>36.2</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>196</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>112</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>100</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>199</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>10.7</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>10.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>35.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>195</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3</th>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>423</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>325</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>519</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>57.8</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>61.4</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>181</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>463</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>323</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>518</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>56.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>59.8</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>176</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>437</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4</th>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>265</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>213</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>372</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>29.3</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>33.6</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>85.5</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>319</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>351</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>27.5</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>31.5</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>83.1</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>316</span></td>
                 </tr>
               </tbody>
             </table>
@@ -304,22 +304,22 @@
               <tbody role="rowgroup">
                 <tr role="row">
                   <th role="rowheader" scope="row">C1</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>3.53</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>4.02</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>2.26</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>21.4</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>18.2</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>6.33</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>1.79</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>3.49</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>3.96</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>2.25</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>21.5</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>18.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>6.45</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>1.77</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2</th>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>0.34</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>0.38</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>0.20</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>3.54</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>3.46</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1.07</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>0.19</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>3.62</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>3.55</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1.08</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>0.20</span></td>
                 </tr>
                 <tr role="row">
@@ -327,19 +327,19 @@
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>0.83</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>1.09</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>0.68</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>6.10</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>5.74</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1.95</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>0.76</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>6.22</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>5.89</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>2.00</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>0.81</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4</th>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4</span><span>0.33</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*4 tuned</span><span>0.41</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>0.23</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>2.97</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>2.58</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1.02</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">WRF real*8</span><span>0.25</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 fast</span><span>3.15</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP32 identity</span><span>2.76</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU FP64</span><span>1.04</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CPU FP64</span><span>0.27</span></td>
                 </tr>
               </tbody>
@@ -352,7 +352,7 @@
     <section class="section" id="history">
       <h2>Wall time with hourly history</h2>
       <p class="measure">The runs write NetCDF-4 using WRF’s chunking, shuffle and deflate level 2. The 24 h C1 run writes 25 frames per domain. Each 6 h run writes 7. Times and speed-ups are medians across three timed blocks.</p>
-      <p class="measure">Across C1–C4, fast CUDA FP32 was 3.2–7.1× as fast as stock WRF real*4 when both used serial HDF5 compression, and 6.1–8.8× as fast with CPPWRF’s threaded compression.</p>
+      <p class="measure">Across C1–C4, fast CUDA FP32 was 3.1–7.4× as fast as stock WRF real*4 when both used serial HDF5 compression, and 6.1–8.9× as fast with CPPWRF’s threaded compression.</p>
       <details class="disclosure">
         <summary>Wall times, speed-ups and GPU energy for all cases</summary>
         <div class="disclosure-body">
@@ -372,7 +372,7 @@
               <tbody role="rowgroup">
                 <tr role="row">
                   <th role="rowheader" scope="row">C1 · WRF real*4</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>85.7</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>84.5</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -380,7 +380,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C1 · WRF real*4 tuned</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>76.5</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>78.7</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -388,7 +388,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C1 · WRF real*8</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>138.4</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>139.0</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -397,38 +397,38 @@
                 <tr role="row">
                   <th role="rowheader" scope="row">C1 · GPU FP32 fast</th>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>14.0</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>6.08×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>9.89×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>6.10×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>9.98×</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.039</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>3.2</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>3.0</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C1 · GPU FP32 identity</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>16.0</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>5.33×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>8.65×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.045</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>3.5</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>15.7</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>5.37×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>8.81×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.044</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>3.3</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C1 · GPU FP64</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>41.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>41.4</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>2.04×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>3.30×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.117</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>9.0</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>3.36×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.116</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>8.5</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C1 · GPU FP32 fast, serial HDF5</th>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>27.2</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.15×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>5.09×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.11×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>5.11×</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.076</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>4.4</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>4.2</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2 · WRF real*4</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>213.3</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>212.6</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -436,7 +436,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2 · WRF real*4 tuned</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>195.4</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>194.7</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -444,7 +444,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2 · WRF real*8</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>383.4</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>388.8</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -452,39 +452,39 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2 · GPU FP32 fast</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>24.2</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>8.81×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>15.84×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.238</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>26.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>23.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>8.88×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>16.34×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.234</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>25.2</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2 · GPU FP32 identity</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>25.1</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>8.50×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>15.28×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.242</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>26.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>24.8</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>8.56×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>15.73×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.239</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>25.3</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2 · GPU FP64</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>67.4</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.17×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>5.71×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.706</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>69.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>67.5</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.14×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>5.77×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.704</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>67.3</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C2 · GPU FP32 fast, serial HDF5</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>55.7</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.83×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>6.89×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.569</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>38.8</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>55.4</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.84×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>7.01×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.564</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>34.2</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3 · WRF real*4</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>76.3</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>76.0</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -492,7 +492,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3 · WRF real*4 tuned</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>59.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>59.8</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -500,7 +500,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3 · WRF real*8</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>96.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>96.8</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -508,39 +508,39 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3 · GPU FP32 fast</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>11.3</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>6.76×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>8.58×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.117</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>10.0</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>11.1</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>6.83×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>8.70×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.115</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>9.6</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3 · GPU FP32 identity</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>12.0</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>6.37×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>8.10×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.124</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>10.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>11.8</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>6.44×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>8.21×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.121</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>10.0</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3 · GPU FP64</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>32.6</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>2.34×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>2.98×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.353</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>28.4</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>31.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>2.38×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>3.03×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.345</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>27.3</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C3 · GPU FP32 fast, serial HDF5</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>14.8</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>5.16×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>6.54×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.154</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>11.7</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>14.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>5.19×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>6.64×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.152</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>10.8</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4 · WRF real*4</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>186.5</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>186.4</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -548,7 +548,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4 · WRF real*4 tuned</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>150.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>150.6</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -556,7 +556,7 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4 · WRF real*8</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>263.7</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>249.4</span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span><span aria-label="No value">—</span></span></td>
                   <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span><span aria-label="No value">—</span></span></td>
@@ -564,35 +564,35 @@
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4 · GPU FP32 fast</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>22.2</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>8.42×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>11.89×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.234</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>22.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>21.1</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>8.85×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>11.84×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.221</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>21.2</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4 · GPU FP32 identity</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>25.3</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>7.37×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>10.42×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.268</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>24.6</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>23.9</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>7.80×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>10.44×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.252</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>22.8</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4 · GPU FP64</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>61.1</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.05×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>4.31×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.666</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>58.2</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>59.8</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>3.12×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>4.16×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.651</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>56.2</span></td>
                 </tr>
                 <tr role="row">
                   <th role="rowheader" scope="row">C4 · GPU FP32 fast, serial HDF5</th>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>26.3</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>7.10×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>10.02×</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.276</span></td>
-                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>24.2</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">Wall (s)</span><span>25.2</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*4</span><span>7.39×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">vs stock WRF real*8</span><span>9.88×</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">CU / day</span><span>0.264</span></td>
+                  <td role="cell" class="num"><span class="cell-label" aria-hidden="true">GPU kJ / day</span><span>22.5</span></td>
                 </tr>
               </tbody>
             </table>
@@ -658,20 +658,20 @@
         <h3>Speed-up by case and WRF build</h3>
         
       <figure class="paper-figure">
-        <img src="assets/speedup.png" width="978" height="817" loading="lazy" decoding="async" alt="Speed-up plot comparing CPPWRF builds with three WRF builds">
-        <figcaption>Bars show median speed-ups for C1–C4. Columns compare with stock WRF real*4, tuned WRF real*4 and WRF real*8 at their fastest layouts. Rows show steady stepping with history off, wall time with history off, and wall time with hourly history. Whiskers span the smallest to largest per-block ratio. <a href="assets/speedup.png" aria-label="Open full-size plot: Speed-up plot comparing CPPWRF builds with three WRF builds">Full-size plot</a></figcaption>
+        <img src="assets/speedup.png" width="1200" height="810" loading="lazy" decoding="async" alt="Speed-up plot comparing CPPWRF builds with three WRF builds">
+        <figcaption>Columns compare CPPWRF with stock WRF real*4, tuned WRF real*4 and WRF real*8 at their fastest screened layouts. The rows show steady stepping with history off, wall time with history off and wall time with hourly history. For each case and build, bars show median speed-ups and whiskers span the smallest to largest per-block ratios. The serial HDF5 bars use fast FP32 with HDF5’s serial filter. <a href="assets/speedup.png" aria-label="Open full-size plot: Speed-up plot comparing CPPWRF builds with three WRF builds">Full-size plot</a></figcaption>
       </figure>
         <h3>Wall-time breakdown</h3>
         
       <figure class="paper-figure">
-        <img src="assets/wall-time.png" width="1031" height="1262" loading="lazy" decoding="async" alt="Wall-time breakdown for C1 through C4 with history off and on">
-        <figcaption>For each case and build, the plot splits the median-wall-time run into steady steps, the first step, history output, input reads during stepping, and the remaining time. With history on, CUDA stepping and output overlap and share one bar. CPPWRF logs no separate input-read timing during steps, so any such reads count under stepping or the remaining time. <a href="assets/wall-time.png" aria-label="Open full-size plot: Wall-time breakdown for C1 through C4 with history off and on">Full-size plot</a></figcaption>
+        <img src="assets/wall-time.png" width="1200" height="690" loading="lazy" decoding="async" alt="Wall-time breakdown for C1 through C4, with history off on the left and hourly history on the right">
+        <figcaption>For each case and build, the plot splits the run with median wall time into steady steps, the first step, history output, input reads during stepping and the remaining time. The left panel shows history off. The right panel shows hourly history, where CUDA stepping and output overlap and share a segment. Any CPPWRF input reads during steps count toward stepping or the remaining time. <a href="assets/wall-time.png" aria-label="Open full-size plot: Wall-time breakdown for C1 through C4 with history off and on">Full-size plot</a></figcaption>
       </figure>
         <h3>GPU energy and WRF layout screening</h3>
         
       <figure class="paper-figure">
-        <img src="assets/energy-layouts.png" width="968" height="916" loading="lazy" decoding="async" alt="GPU board energy and power, and WRF process layout screening">
-        <figcaption>The upper panels show board energy per simulated day and steady board power with history off, with the range across five blocks. The lower panels show WRF step time relative to the fastest screened layout for the same case and build, using the median of two 30-minute runs per layout. <a href="assets/energy-layouts.png" aria-label="Open full-size plot: GPU board energy and power, and WRF process layout screening">Full-size plot</a></figcaption>
+        <img src="assets/energy-layouts.png" width="1200" height="1044" loading="lazy" decoding="async" alt="GPU board energy and power, and WRF process layout screening">
+        <figcaption>The upper panels show GPU board energy in Wh per simulated day and steady GPU board power in watts, both with history off. Power bars show the median of five block means, with whiskers spanning their full range. The lower panels show median WRF step time from two 30-minute runs per layout, relative to the fastest screened layout for the same case and build. <a href="assets/energy-layouts.png" aria-label="Open full-size plot: GPU board energy and power, and WRF process layout screening">Full-size plot</a></figcaption>
       </figure>
       </div>
     </section>
@@ -770,9 +770,9 @@
 
     <section class="section panel" id="paper">
       <h2>Paper / preprint</h2>
-      <p>In preparation. The paper describes CPPWRF v1.3.0 and reports the benchmark of the v1.2.1 model code. The benchmark covers one runtime and one GPU model. WRF performance uses GNU builds, with the tuned variant measured for real*4 only.</p>
+      <p>In preparation. The paper describes CPPWRF release 1.4.0 and reports the Colab G4 benchmark of its model code at <code>a63ed9f</code>. The benchmark covers one runtime and one GPU model. WRF performance uses GNU builds, with the tuned variant measured for real*4 only.</p>
       <ul class="actions">
-        <li><a class="button secondary" href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.3.0">Benchmark data in the v1.3.0 release</a></li>
+        <li><a class="button secondary" href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.4.0">CPPWRF v1.4.0 release</a></li>
         <li><a class="button secondary" href="cite.html">Cite CPPWRF</a></li>
       </ul>
     </section>

@@ -41,12 +41,12 @@
         <h2 id="bench-head">Steady stepping on Colab G4</h2>
         <p class="bench-note">Case C2, large daytime P4 grid (359 × 269 × 44), history off.</p>
         <dl class="bench-metrics">
-          <div><dt>CUDA FP32 fast vs stock WRF real*4</dt><dd>10.32×</dd></div>
-          <div><dt>CUDA FP32 fast vs tuned WRF real*4</dt><dd>9.22×</dd></div>
-          <div><dt>CUDA FP32 identity vs stock WRF real*4</dt><dd>10.08×</dd></div>
-          <div><dt>CUDA FP64 vs stock WRF real*8</dt><dd>5.48×</dd></div>
+          <div><dt>CUDA FP32 fast vs stock WRF real*4</dt><dd>10.54×</dd></div>
+          <div><dt>CUDA FP32 fast vs tuned WRF real*4</dt><dd>9.42×</dd></div>
+          <div><dt>CUDA FP32 identity vs stock WRF real*4</dt><dd>10.32×</dd></div>
+          <div><dt>CUDA FP64 vs stock WRF real*8</dt><dd>5.53×</dd></div>
         </dl>
-        <p class="bench-note">Median per-block speed-ups on one NVIDIA RTX PRO 6000 Blackwell Server Edition versus the fastest screened WRF layouts on the same runtime’s AMD EPYC 9B45 (24 cores, 48 hardware threads). CPPWRF model code v1.2.1 (<code>fa797b3</code>).</p>
+        <p class="bench-note">Median per-block speed-ups on one NVIDIA RTX PRO 6000 Blackwell Server Edition versus the fastest screened WRF layouts on the same runtime’s AMD EPYC 9B45 (24 cores, 48 hardware threads). CPPWRF model code of release 1.4.0 (<code>a63ed9f</code>).</p>
         <p class="bench-note"><a href="performance.html">Paper benchmarks and protocol</a></p>
       </section>
     </div>
