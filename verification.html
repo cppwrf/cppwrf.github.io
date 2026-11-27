@@ -40,22 +40,22 @@
   </header>
   <div class="shell content">
     <section class="section" id="results">
-      <h2 class="section-title">v1.5.0 results at tolerance 0</h2>
+      <h2 class="section-title">v1.6.0 results at tolerance 0</h2>
       <div class="grid three">
         <article class="method-card">
-          <h3>CPU CI · 533 checks</h3>
-          <p>471 FP64 cases, 18 restart checks and 44 FP32 cases against WRF.</p>
+          <h3>CPU CI · 567 checks</h3>
+          <p>FP64 cases, restart checks and FP32 cases against WRF, plus 43 WRF output files and 14 ideal files.</p>
         </article>
         <article class="method-card">
-          <h3>CUDA FP64 · 423 checks</h3>
-          <p>405 FP64 cases and 18 GPU restart checks against WRF real*8 on Colab G4.</p>
+          <h3>CUDA FP64 · 446 checks</h3>
+          <p>FP64 cases and GPU restart checks against WRF real*8 on two Tesla T4 (Kaggle).</p>
         </article>
         <article class="method-card">
-          <h3>CUDA FP32 identity · 44 checks</h3>
-          <p>44 cases against WRF real*4 on Colab G4. Identity is the default CUDA FP32 mode.</p>
+          <h3>CUDA FP32 identity · 48 checks</h3>
+          <p>48 cases against WRF real*4 on two Tesla T4 (Kaggle). Identity is the default CUDA FP32 mode.</p>
         </article>
       </div>
-      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/RELEASE_NOTES.md#verification">Release verification results</a></p>
+      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.6.0/docs/RELEASE_NOTES.md#verification">Release verification results</a></p>
     </section>
 
     <section class="section" id="method">
@@ -92,7 +92,7 @@
           <p>The suite exercises real-data and idealized cases, including a three-domain two-way nest in CPU and CUDA FP64. FP32 identity covers 24 configurations. Tiled and MPI checks apply to the configurations run in those layouts.</p>
         </div>
       </div>
-      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/STATUS.md">Full coverage matrix</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/FP32_IDENTITY.md">FP32 identity cases</a></p>
+      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.6.0/docs/STATUS.md">Full coverage matrix</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.6.0/docs/FP32_IDENTITY.md">FP32 identity cases</a></p>
     </section>
 
     <section class="section" id="limits">
@@ -107,7 +107,7 @@
           <li>The 72-hour WRF comparison for the two-way nest N3 remains open.</li>
         </ul>
       </div>
-      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/STATUS.md#not-yet-implemented">Configuration and restart limits</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.5.0/docs/MPI.md">MPI verification</a></p>
+      <p class="fit-note"><a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.6.0/docs/STATUS.md#not-yet-implemented">Configuration and restart limits</a> · <a href="https://github.com/Xassemblianist/CPPWRF/blob/v1.6.0/docs/MPI.md">MPI verification</a></p>
     </section>
   </div>
 </main>
@@ -117,7 +117,7 @@
     <nav aria-label="Project links">
       <ul class="footer-nav">
         <li><a href="https://github.com/Xassemblianist/CPPWRF">GitHub</a></li>
-        <li><a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.5.0">v1.5.0</a></li>
+        <li><a href="https://github.com/Xassemblianist/CPPWRF/releases/tag/v1.6.0">v1.6.0</a></li>
         <li><a href="cite.html#license">License and citation</a></li>
       </ul>
     </nav>
